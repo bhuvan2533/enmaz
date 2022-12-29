@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Fragment } from "react";
+import "./App.css";
+import Drawer from "./Components/Drawer/Drawer";
+import Filters from "./Components/Filters/Filters.jsx";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Drawer />
+      <section id="schedule-global">
+        <div className="schedule-global-header">
+          <h1>Schedule</h1>
+          <h3>Global</h3>
+        </div>
+        <Filters />
+      </section>
+    </Fragment>
   );
 }
 
