@@ -61,6 +61,7 @@
     top: 0;
     min-height: 100vh;
     background-color: #fff;
+    position: fixed !important;
     width: 23% !important;
   }
   .drawer-main-section ul li {

@@ -1,3 +1,4 @@
+
 .schedule-filters {
   width: 100%;
   margin: 20px 0px;
@@ -5,6 +6,7 @@
   padding: 20px;
   border-radius: 12px;
 }
+
 
 .schedule-filters h4 {
   padding: 0 0 10px 0;
@@ -20,7 +22,8 @@
   background-color: #004a77 !important;
 }
 
-
-.dropdownBox{
+.dropdownBox {
   padding-left: 20px;
 }
+
+

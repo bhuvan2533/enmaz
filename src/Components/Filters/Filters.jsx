@@ -8,51 +8,46 @@ import {
 } from "@mui/material";
 import React, { Fragment } from "react";
 import AccessAlarmIcon from "@mui/icons-material/AccessAlarm";
+import AddLocationAltIcon from "@mui/icons-material/AddLocationAlt";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import FactoryIcon from "@mui/icons-material/Factory";
+import Dropdown from "../Dropdown/Dropdown";
+import MemoryIcon from "@mui/icons-material/Memory";
 import "./Filters.css";
+
 const Filters = () => {
+  const data = [
+    "Bhuvan",
+    "Anish",
+    "Hemanth",
+    "Ajith",
+    "Amisha",
+    "Ananya",
+    "Aakanksha",
+  ];
+
   return (
     <Fragment>
       <div className="schedule-filters">
         <h4>Filters</h4>
-
         <Grid container spacing={3}>
           <Grid item md={4} xs={12}>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label" size="small">
-                Age
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Age"
-                size="small"
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
+              <Dropdown
+                selectPlaceholder="Select your option"
+                selectData={data}
+                icon={<AccessAlarmIcon className="iconInSelect" />}
+              />
             </FormControl>
           </Grid>
+
           <Grid item md={4} xs={12}>
             <FormControl fullWidth>
-              <InputLabel
-                id="demo-simple-select-label"
-                size="small"
-                sx={{ paddingLeft: "60px" }}
-              >
-                Age
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Age"
-                variant="outlined"
-                size="small"
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
+              <Dropdown
+                selectPlaceholder="Select Sub Area"
+                selectData={data}
+                icon={<AddLocationAltIcon className="iconInSelect" />}
+              />
             </FormControl>
           </Grid>
 
@@ -73,37 +68,21 @@ const Filters = () => {
 
           <Grid item md={4} xs={12}>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label" size="small">
-                Age
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Age"
-                size="small"
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
+              <Dropdown
+                selectPlaceholder="Select Location"
+                selectData={data}
+                icon={<LocationOnIcon className="iconInSelect" />}
+              />
             </FormControl>
           </Grid>
 
           <Grid item md={4} xs={12}>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label" size="small">
-                Age
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Age"
-                size="small"
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
+              <Dropdown
+                selectPlaceholder="Select Machine"
+                selectData={data}
+                icon={<FactoryIcon className="iconInSelect" />}
+              />
             </FormControl>
           </Grid>
 
@@ -121,36 +100,20 @@ const Filters = () => {
 
           <Grid item md={4} xs={12}>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label" size="small">
-                Age
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Age"
-                size="small"
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
+              <Dropdown
+                selectPlaceholder="Select Area"
+                selectData={data}
+                icon={<AddLocationAltIcon className="iconInSelect" />}
+              />
             </FormControl>
           </Grid>
           <Grid item md={4} xs={12}>
             <FormControl fullWidth>
-              <InputLabel id="demo-simple-select-label" size="small">
-                Age
-              </InputLabel>
-              <Select
-                labelId="demo-simple-select-label"
-                id="demo-simple-select"
-                label="Age"
-                size="small"
-              >
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
+              <Dropdown
+                selectPlaceholder="Select Technology"
+                selectData={data}
+                icon={<MemoryIcon className="iconInSelect" />}
+              />
             </FormControl>
           </Grid>
         </Grid>

@@ -16,5 +16,6 @@
 @media (max-width: 926px) {
   #schedule-global {
     margin-left: 25%;
+    width:67%;
   }
 }
