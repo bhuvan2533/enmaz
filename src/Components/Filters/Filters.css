@@ -1,18 +1,26 @@
-.schedule-filters{
-    width:100%;
-    margin:20px 0px;
-    background-color: white;
-    padding:20px;
-    border-radius: 12px;
+.schedule-filters {
+  width: 100%;
+  margin: 20px 0px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
 }
 
-.schedule-filters h4{
-    padding:0 0 10px 0;
+.schedule-filters h4 {
+  padding: 0 0 10px 0;
+}
+
+.centerThis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.schedule-filters-btn {
+  background-color: #004a77 !important;
 }
 
 
-.centerThis{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.dropdownBox{
+  padding-left: 20px;
+}

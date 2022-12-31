@@ -1,0 +1,17 @@
+.scheduleList {
+  background-color: white;
+  padding: 28px 20px;
+  margin-bottom: 60px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.scheduleList h4{
+  margin-bottom: 10px;
+}
+
+.schedule-list-button {
+  padding: 3px 10px !important;
+  font-size: 11px !important;
+  background-color: #004a77 !important;
+}

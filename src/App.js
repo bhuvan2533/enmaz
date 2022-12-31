@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import "./App.css";
 import Drawer from "./Components/Drawer/Drawer";
 import Filters from "./Components/Filters/Filters.jsx";
+import ScheduleList from "./Components/ScheduleList/ScheduleList.jsx";
 function App() {
   return (
     <Fragment>
@@ -12,6 +13,7 @@ function App() {
           <h3>Global</h3>
         </div>
         <Filters />
+        <ScheduleList />
       </section>
     </Fragment>
   );
